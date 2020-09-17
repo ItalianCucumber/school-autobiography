@@ -10,7 +10,7 @@ h1.title {
 }
 
 .parallax {
-  background-image: url("/sunset-header.png");
+  background-image: url("sunset-header.png");
   height: 100%;
   background-attachment: fixed;
   background-position: bottom;
