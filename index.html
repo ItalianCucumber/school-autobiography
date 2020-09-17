@@ -48,14 +48,11 @@
       <li>Explore Computer Science
     </ol>
 </div>
-        <a href='https://youtu.be/dQw4w9WgXcQ' target='_blank' id="hrefAudio"><button type="button" class="collapsible">Favourite Quote</button></a>
+<audio id="playAudio" src="src/rickroll.mp3" preload="auto"></audio>
+        <button type="button" onclick="document.getElementById('playAudio').play();" class="collapsible">Favourite Quote</button>
 <div class="content">
     <p class='quote'><b><i>"Never gonna give you up"</i></b></p>
     <h2 class='quote'>- Rick Astley</h2>
-    <audio autoplay loop  id="playAudio">
-    <source src="src/rickroll.mp3">
-      Your browser can't access this masterpiece
-</audio>
 </div>
         <script>
             var coll = document.getElementsByClassName("collapsible");
@@ -71,13 +68,6 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove()
-  }
         </script>
     </body>
 </html>
