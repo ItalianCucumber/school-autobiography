@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+body {
+    background-color: #191919;
+    color: white;
+}
+
+h1.title {
+    text-align: center;
+    font-size: 65px;
+    font-family: Google Sans, Kumbh Sans, monospace;
+}
+
+.parallax {
+  background-image: url("src/sunset-header.png");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.collapsible {
+  background-color: #272727;
+  color: #dedede;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  font-family: Google Sans, Kumbh Sans, monospace;
+}
+
+.active, .collapsible:hover {
+  background-color: #242424;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #313131;
+  font-family: Google Sans, Kumbh Sans, monospace;
+}
+
+.collapsible:after {
+  content: '\02795';
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+p.quote {
+    font-size: 24px;
+    text-align: right;
+}
+
+h2.quote {
+    font-size: 16px;
+    text-align: right;
+}
