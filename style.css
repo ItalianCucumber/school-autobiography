@@ -13,7 +13,7 @@ h1.title {
   background-image: url("sunset-header.png");
   height: 100%;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
