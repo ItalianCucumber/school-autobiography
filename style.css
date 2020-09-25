@@ -31,6 +31,7 @@ h1.title {
   outline: none;
   font-size: 24px;
   font-family: Google Sans, Kumbh Sans, monospace;
+  transition-duration: 0.5s;
 }
 
 .active, .collapsible:hover {
