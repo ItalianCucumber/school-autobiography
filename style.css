@@ -1,27 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@font-face {
+  font-family: Kumbh Sans;
+  src: url("src/KumbhSans-Regular.woff");
+}
+
+@font-face {
+  font-family: Kumbh Sans;
+  src: url("src/KumbhSans-Bold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Kumbh Sans;
+  src: url("src/KumbhSans-Light.woff");
+  font-weight: light;
+}
 
 body {
     background-color: #191919;
     color: white;
+    background-image: url("src/sunset-header.png");
+    background-blend-mode: color-dodge;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1.title {
     text-align: center;
-    font-size: 65px;
+    font-size: 75px;
+    padding: 65px;
     font-family: Google Sans, Kumbh Sans, monospace;
 }
 
 .parallax {
-  background-image: url("src/sunset-header.png");
+  background-color: #272727aa;
+  transition-duration: 0.5s
+  /*background-image: url("src/sunset-header.png");
   height: 100%;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center 65%;
+  background-repeat: no-repeat;*/
+}
+
+.parallax:hover {
+  background-color: #27272755;
+  transition-duration: 0.5s
 }
 
 .collapsible {
-  background-color: #272727;
+  background-color: #27272799;
   color: #dedede;
   cursor: pointer;
   padding: 18px;
@@ -35,14 +62,14 @@ h1.title {
 }
 
 .active, .collapsible:hover {
-  background-color: #242424;
+  background-color: #242424dd;
 }
 
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #313131;
+  background-color: #31313177;
   font-family: Google Sans, Kumbh Sans, monospace;
 }
 
@@ -74,4 +101,8 @@ p.quote {
 h2.quote {
     font-size: 16px;
     text-align: right;
+}
+
+table {
+  padding: 10px;
 }
