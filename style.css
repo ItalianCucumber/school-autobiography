@@ -18,6 +18,7 @@
 body {
     background-color: #191919;
     color: white;
+    background-image: url("src/sunset-header-low.png");
     background-image: url("src/sunset-header.png");
     background-blend-mode: color-dodge;
     background-size: cover;
